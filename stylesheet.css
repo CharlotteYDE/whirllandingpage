@@ -693,15 +693,3 @@ footer::before {
     }
 
 }
-
-.logo:focus,
-.hero-section:focus,
-.hero-img:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 4px;
-}
-
-.custom-tabbar .nav-link:focus {
-    outline: 3px solid #007BFF;
-    outline-offset: 2px;
-  }
