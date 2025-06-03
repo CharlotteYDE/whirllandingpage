@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--Sproget er ændret til dansk - Accessibility-->
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whirl</title>
+    <link rel="icon" href="img/favicon.webp" type="image/webp">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <header role="banner">
+        <!-- Container fluid bruges til full width of the container i hero section -->
+        <!-- Korrekte semantikker er brugt for at være accessibility venlig -->
+        <div class="container-fluid">
+            <!-- Radial background gradient -->
+            <div class="radial-bg-pulse"></div>
+            <!-- Logo -->
+            <img src="img/icon.webp" alt="whirl logo – angst støtte app" class="img-fluid logo" width="80px"
+                tabindex="0">
+        </div>
+        <!-- Hero -->
+        <div class="container-fluid mx-lg-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <div class="text-center text-lg-start hero-section" tabindex="0">
+                            <h1 class="pb-3">
+                                <span class="d-block">Whirl i lommen,</span>
+                                <span class="d-block">ro i sindet</span>
+                            </h1>
+                            <p class="feature-description">
+                                Med øvelser og kærlige påmindelser hjælper vores app
+                                dig med at skabe overblik og finde ro midt i angsten. Dit pusterum, altid lige ved
+                                hånden.
+                            </p>
+                            <div class="store-buttons">
+                                <a href="#" class="store-placeholder app-store" tabindex="0">
+                                    <span class="small-text">Kommer snart i</span>
+                                    <span class="store-name">App Store</span>
+                                </a>
+
+                                <a href="#" class="store-placeholder google-play" tabindex="0">
+                                    <span class="small-text">Kommer snart i</span>
+                                    <span class="store-name">Google Play</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-lg-6 d-flex justify-content-end justify-content-md-center justify-content-lg-center">
+                    <img src="img/mockup.webp" class="hero-img"
+                        alt="Hånd holder en mobil med Whirl-appen åben på dashboardet, hvor kalender og øvelser vises">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-margin">
+        <div class="container mt-5">
+            <h2 class="overskrift text-center mb-5">Chat. Planlæg. Pust ud.</h2>
+            <div class="row g-3 d-none d-md-flex">
+                <div class="col-lg-4 col-md-6 pb-3">
+                    <div class="custom-card h-100" tabindex="0">
+                        <div class="info-container my-3">
+                            <img src="img/aichat.webp" class="info-img" alt="Ikon for AI-chatfunktion">
+                        </div>
+                        <h4 class="text-start px-3">Luft dine tanker</h4>
+                        <p class="text-start px-3"> Vores omsorgsfulde chatbot lytter og guider dig – uden at dømme.
+                            Uanset om du er
+                            overvældet eller bare har brug for at sætte ord på det hele, er Whirl klar til at
+                            chatte.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-3">
+                    <div class="custom-card h-100" tabindex="0">
+                        <div class="info-container my-3">
+                            <img src="img/calender.webp" class="info-img" alt="Ikon for kalender">
+                        </div>
+                        <h4 class="text-start px-3">Påmindelser til ro</h4>
+                        <p class="text-start px-3">Du kan synkroniserer med din kalender og sender blide meddelser,
+                            når du har brug for det.
+                            Planlæg med plads til pauser og få støtte, hvis angsten sniger sig ind.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-md-auto pb-3">
+                    <div class="custom-card h-100" tabindex="0">
+                        <div class="info-container my-3">
+                            <img src="img/heart.webp" class="info-img" alt="Ikon for hjerte">
+                        </div>
+                        <h4 class="text-start px-3">Favoritter til sindet</h4>
+                        <p class="text-start px-3">Lad Whirl hjælpe dig med at finde og gemme dine yndlingsmetoder –
+                            fra vejrtrækningsøvelser til små mentale pauser. Dit personlige pusterum lige ved hånde
+                            og tæt på hjertet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel for mobile only -->
+            <div id="mobileCardsCarousel-1" class="carousel slide d-md-none" data-bs-ride="carousel" role="region" aria-label="Funktioner i Whirl app">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="custom-card" tabindex="0">
+                            <div class="info-container my-3">
+                                <img src="img/aichat.webp" class="info-img" alt="Ai chat ikon">
+                            </div>
+                            <h4 class="text-start px-3">Luft dine tanker</h4>
+                            <p class="text-start px-3">Vores chatbot lytter og guider dig – uden at dømme. Uanset om du
+                                er overvældet eller bare har brug for at sætte ord på det hele, er Whirl klar til at
+                                chatte.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-card" tabindex="0">
+                            <div class="info-container my-3">
+                                <img src="img/calender.webp" class="info-img" alt="Kalender ikon">
+                            </div>
+                            <h4 class="text-start px-3">Påmindelser til ro</h4>
+                            <p class="text-start px-3">Du kan synkroniserer med din kalender og sender blide meddelser,
+                                når du har brug for det.
+                                Planlæg med plads til pauser og få støtte, hvis angsten sniger sig ind.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-card" tabindex="0">
+                            <div class="info-container my-3">
+                                <img src="img/heart.webp" class="info-img" alt="Hjerte ikon">
+                            </div>
+                            <h4 class="text-start px-3">Favoritter til sindet</h4>
+                            <p class="text-start px-3">Lad Whirl hjælpe dig med at finde og gemme dine yndlingsmetoder –
+                                fra vejrtrækningsøvelser til små mentale pauser. Dit personlige pusterum lige ved hånde
+                                og tæt på hjertet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Round Indicators -->
+                <div class="carousel-indicators mt-3">
+                    <button type="button" data-bs-target="#mobileCardsCarousel-1" data-bs-slide-to="0"
+                        class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mobileCardsCarousel-1" data-bs-slide-to="1"
+                        class="rounded-circle" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mobileCardsCarousel-1" data-bs-slide-to="2"
+                        class="rounded-circle" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab bar -->
+    <section class="tab-section section-margin">
+        <div class="container-fluid d-flex flex-column align-items-center">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="custom-tabbar">
+                        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="calender-tab" data-bs-toggle="tab"
+                                    data-bs-target="#calender" type="button" role="tab" aria-controls="calender"
+                                    aria-selected="true">Kalender</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="chat-tab" data-bs-toggle="tab" data-bs-target="#chat"
+                                    type="button" role="tab" aria-controls="chat" aria-selected="false">Chat</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="task-tab" data-bs-toggle="tab" data-bs-target="#task"
+                                    type="button" role="tab" aria-controls="task" aria-selected="false">Øvelser</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab content kalender -->
+        <div class="container-fluid tab-content">
+            <div class="tab-pane fade show active" id="calender" role="tabpanel" aria-labelledby="calender-tab" tabindex="0">
+                <h2 class="text-center mt-5 mb-3">Kalender øvelser</h2>
+                <div class="row g-3">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="position-relative">
+                            <img src="img/edit.webp"
+                                alt="Rediger funktion med en planlagt øvelse den 2. april klokken 10"
+                                class="pop-img left-top d-none d-md-block">
+                            <img src="img/unplanned.webp" alt="Udklip fra kalender med møde med Rosa, men ikke planlagt"
+                                class="pop-img left-bottom">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="content-box p-4 d-flex justify-content-center">
+                            <img src="img/dashboard.webp" class="mockup"
+                                alt="Dashboard i Whirl overskrift med 'hej Sofie hvordan kan jeg hjælpe i dag?'">
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="position-relative">
+                            <img src="img/planlagtt.webp" alt="Planlagt dato eksamen klokken 10"
+                                class="pop-img right-top ">
+                            <img src="img/button.webp" alt="Knap der viser planlæg med whirl"
+                                class="pop-img right-bottom d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab content chat -->
+        <div class="container-fluid px-4 tab-content">
+            <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+                <h2 class="text-center mt-5 mb-3">
+                    Chat med Whirl
+                </h2>
+                <div class="row g-3">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="position-relative">
+                            <img src="img/whirl-chat.webp" alt="Udklip fra chat samtalen med Whirl"
+                                class="pop-img left-top d-none d-md-block">
+                            <img src="img/chat-bubble.webp" style="width: 100px;" alt="Præsentation af chat ikon i blå cirkel"
+                                class="pop-img left-bottom">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="content-box p-4 d-flex justify-content-center">
+                            <img src="img/chat.webp" class="mockup" alt="Ai-chat funktionen i Whirl-appen">
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="position-relative">
+                            <img src="img/explore-button.webp" alt="Planlagt dato eksamen klokken 10"
+                                class="pop-img right-top ">
+                            <img src="img/del.webp" alt="Knap der viser del samtalen med whirl med dem du kender"
+                                class="pop-img right-bottom d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab content øvelser -->
+        <div class="container-fluid px-4 tab-content">
+            <div class="tab-pane fade" id="task" role="tabpanel" aria-labelledby="task-tab">
+                <h2 class="text-center mt-5 mb-3">
+                    Gem og udforsk øvelser
+                </h2>
+                <div class="row g-3">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="position-relative">
+                            <img src="img/excersise.webp"
+                                alt="Oversigt over forskellige vejrtrækningsøvelser, hvor brugeren kan vælge mellem metoder som 4-7-8 vejrtrækning, box breathing og dyb maveåndedræt"
+                                class="pop-img left-top d-none d-md-block">
+                            <img src="img/explore-button.webp"
+                                alt="Knap med teksten 'Udforsk med Whirl', der giver adgang til brugerens favoritøvelser i Whirl appen"
+                                class="pop-img left-bottom">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="content-box p-4 d-flex justify-content-center">
+                            <img src="img/methods.webp" class="mockup"
+                                alt="Skærmvisning fra Whirl appen, der viser en oversigt over brugerens favoritøvelser og tidligere gennemførte vejrtrækningsøvelser">
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="position-relative">
+                            <img src="img/breathing.webp"
+                                alt="Animeret cirkel fra Whirl appen, der bruges som visuelt hjælpemiddel under vejrtrækningsøvelser til at guide ind- og udånding"
+                                class="pop-img right-top ">
+                            <img src="img/duration.webp"
+                                alt="Oversigt i Whirl appen, hvor brugeren kan vælge varighed for vejrtrækningsøvelser, fx 2, 5 eller 10 minutter"
+                                class="pop-img right-bottom d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-margin">
+        <div class="container mt-5">
+            <h2 class="overskrift text-center mb-5">Åben op. Bliv mødt. Find ro.</h2>
+            <div class="row g-3 d-none d-md-flex">
+                <div class="col-lg-4 col-md-6 pb-3">
+                    <div class="custom-card h-100" tabindex="0">
+                        <div class="info-container my-3">
+                            <img src="img/silent-ikon.webp" class="info-img" alt="Mute ikon">
+                        </div>
+                        <h4 class="text-start px-3">Mange kæmper i stilhed</h4>
+                        <p class="text-start px-3">
+                        <p class="text-start px-3">
+                            Mellem 350.000 og 400.000 danskere lever med angst - og særligt unge mærker presset i
+                            hverdagen.
+                            <br>
+                            <br>
+                            <small class="text-muted">
+                                Kilde:
+                                <a href="https://www.ft.dk/samling/20151/almdel/SUU/bilag/703/1663090.pdf"
+                                    target="_blank" class="text-decoration-none text-body">Sundheds- og Ældreudvalget
+                                    (2015)</a>
+                            </small>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-3">
+                    <div class="custom-card h-100" tabindex="0">
+                        <div class="info-container my-3">
+                            <img src="img/text-icon.webp" class="info-img" alt="Linjer med hjerte ikon">
+                        </div>
+                        <h4 class="text-start px-3">Skabt med forståelse</h4>
+                        <p class="text-start px-3">
+                            Whirl er udviklet med kærlighed og en dyb forståelse for det svære, livet kan byde på. Vi
+                            ønsker at støtte dig trygt og nænsomt – uden at dømme, presse eller skabe forventninger.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-md-auto pb-3">
+                    <div class="custom-card h-100" tabindex="0">
+                        <div class="info-container my-3">
+                            <img src="img/hand-heart.webp" class="info-img" alt="Hånd med et hjerte over sig ikon">
+                        </div>
+                        <h4 class="text-start px-3">Altid tæt på dig</h4>
+                        <p class="text-start px-3"> Whirl er din trofaste følgesvend — lige ved hånden, når tankerne
+                            larmer, eller presset
+                            vokser. En stille støtte, der hjælper dig med at finde og planlægge ro, når du har brug
+                            for det.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel for mobile only -->
+            <div id="mobileCardsCarousel-2" class="carousel slide d-md-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="custom-card" tabindex="0">
+                            <div class="info-container my-3">
+                                <img src="img/silent-ikon.webp" class="info-img" alt="Mute ikon">
+                            </div>
+                            <h4 class="text-start px-3">Mange kæmper i stilhed</h4>
+                            <p class="text-start px-3">
+                            <p class="text-start px-3">
+                                Over 400.000 danskere lever med angst og manger mærker presset i hverdagen.
+                                <br>
+                                <br>
+                                <small class="text-muted">
+                                    Kilde:
+                                    <a href="https://www.sst.dk" target="_blank"
+                                        class="text-decoration-none text-body">Sundhedsstyrelsen</a>,
+                                    <a href="https://angstforeningen.dk" target="_blank"
+                                        class="text-decoration-none text-body">Angstforeningen</a>.
+                                </small>
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-card" tabindex="0">
+                            <div class="info-container my-3">
+                                <img src="img/text-icon.webp" class="info-img" alt="Linjer med hjerte ikon">
+                            </div>
+                            <h4 class="text-start px-3">Skabt med forståelse</h4>
+                            <p class="text-start px-3">
+                                Whirl er udviklet med kærlighed og en dyb forståelse for det svære, livet kan byde på.
+                                Vi ønsker at støtte dig trygt og nænsomt - uden at dømme, presse eller skabe
+                                forventninger.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-card" tabindex="0">
+                            <div class="info-container my-3">
+                                <img src="img/hand-heart.webp" class="info-img" alt="Hånd med et hjerte over sig ikon">
+                            </div>
+                            <h4 class="text-start px-3">Altid tæt på dig</h4>
+                            <p class="text-start px-3">
+                                Whirl er din trofaste følgesvend - lige ved hånden, når tankerne larmer, eller presset
+                                vokser. En stille støtte, der hjælper dig med at finde og planlægge ro, når du har brug
+                                for det.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Round Indicators -->
+                <div class="carousel-indicators mt-3">
+                    <button type="button" data-bs-target="#mobileCardsCarousel-2" data-bs-slide-to="0"
+                        class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mobileCardsCarousel-2" data-bs-slide-to="1"
+                        class="rounded-circle" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mobileCardsCarousel-2" data-bs-slide-to="2"
+                        class="rounded-circle" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="mb-4">
+    <h2 class="mb-4 text-center">Hvad siger brugerne?</h2>
+    <div class="testimonial-carousel" role="region" aria-label="Testimonials" tabindex="0">
+        <div class="testimonial-track">
+            <div class="testimonial-group">
+                <div class="testimonial">
+                    <p>"Whirl hjalp mig med at finde ro, når tankerne kørte i ring."</p>
+                    <small>– Emma, 22 år</small>
+                </div>
+                <div class="testimonial mx-5">
+                    <p>"Det føles som en ven i lommen, når jeg har allermest brug for det."</p>
+                    <small>– Jonas, 19 år</small>
+                </div>
+                <div class="testimonial">
+                    <p>"Endelig noget, der ikke dømmer, bare støtter."</p>
+                    <small>– Maja, 24 år</small>
+                </div>
+                <div class="testimonial mx-5">
+                    <p>"En hjælp lige ved hånden, når det hele bliver for meget."</p>
+                    <small>– Lars, 27 år</small>
+                </div>
+
+                <div class="testimonial">
+                    <p>"Whirl hjalp mig med at finde ro, når tankerne kørte i ring."</p>
+                    <small>– Emma, 22 år</small>
+                </div>
+                <div class="testimonial mx-5">
+                    <p>"Det føles som en ven i lommen, når jeg har allermest brug for det."</p>
+                    <small>– Jonas, 19 år</small>
+                </div>
+                <div class="testimonial">
+                    <p>"Endelig noget, der ikke dømmer, bare støtter."</p>
+                    <small>– Maja, 24 år</small>
+                </div>
+                <div class="testimonial">
+                    <p>"En hjælp lige ved hånden, når det hele bliver for meget."</p>
+                    <small>– Lars, 27 år</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container-fluid text-center text-md-start py-5 mb-5">
+            <div class="row ">
+                <!-- Column 1 -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <div class="p-lg-5">
+                        <h4>Kontakt</h4>
+                        <!-- Email -->
+                        <div
+                            class="d-flex flex-row justify-content-md-start justify-content-center align-items-center gap-2 my-3">
+                            <span class="material-symbols-outlined" style="font-size: 32px; color: #0d1b2a;">mail</span>
+                            <p class="mb-0">whirlbothelp@gmail.com</p>
+                        </div>
+                        <!-- Address -->
+                        <div
+                            class="d-flex flex-row justify-content-md-start  justify-content-center align-items-center gap-2 my-3">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 32px; color: #0d1b2a;">location_on</span>
+                            <p class="mb-0">Firskovsvej 18,<br>2800 Kongens Lyngby</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-12 col-md-4 text-center mt-5 mt-5 mt-md-0">
+                    <div class="p-lg-5">
+                        <h4 class="mb-4">Snart kan du downloade Whirl</h4>
+                        <div class="store-buttons d-flex align-items-center justify-content-center">
+                            <a href="#" class="store-placeholder app-store">
+                                <span class="small-text">Kommer snart i</span>
+                                <span class="store-name">App Store</span>
+                            </a>
+
+                            <a href="#" class="store-placeholder google-play">
+                                <span class="small-text">Kommer snart i</span>
+                                <span class="store-name">Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-12 col-md-4 text-center text-md-end mt-5 mt-md-0">
+                    <div class="p-lg-5">
+                        <h4>Følg os</h4>
+                        <a href="https://www.instagram.com/whirlbot/?igsh=MTlqZWV1ejAxcG55dg%3D%3D#"
+                            class="text-dark d-inline-flex align-items-center gap-2 mb-3">
+                            <span>@Whirlbot</span>
+                            <img src="img/mdi_instagram.svg" alt="Instagram" style="width: 25px; color: #0d1b2a;">
+                        </a>
+                        <!-- Icon and copyright stacked -->
+                        <div>
+                            <div class="mt-4">
+                                <img src="img/icon.webp" style="width: 60px;" alt="">
+                                <div class="text-muted text-body copyright mb-3 mt-2">&copy; 2025 Whirl. Alle
+                                    rettigheder forbeholdes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript and dependencies og Custom JavaScript til load af mockups i tabbar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body
+            const tabIds = ['calender', 'chat', 'task'];
+            tabIds.forEach(tabId => {
+                const tabButton = document.querySelector(`#${tabId}-tab`);
+                if (tabButton) {
+                    tabButton.addEventListener('shown.bs.tab', () => {
+                        const images = document.querySelectorAll(`#${tabId} .pop-img`);
+                        images.forEach(img => {
+                            img.classList.remove('pop-in');
+                            void img.offsetWidth;
+                            img.classList.add('pop-in');
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
